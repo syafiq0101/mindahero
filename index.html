@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MindaHero | Belajar Sambil Bermain</title>
+
+    <meta
+        name="description"
+        content="MindaHero menyediakan aplikasi pembelajaran interaktif untuk kanak-kanak."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f8ff;
+            color: #24324a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #5b67f1, #8d5cf6);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 25px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .app-icon {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .app-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .app-card p {
+            color: #5d6878;
+            margin-bottom: 20px;
+        }
+
+        .version {
+            display: inline-block;
+            background: #eef0ff;
+            color: #525dc9;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background: #5b67f1;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+            background: #4651d6;
+        }
+
+        .coming-soon {
+            display: inline-block;
+            background: #eceff3;
+            color: #697386;
+            padding: 14px 25px;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .instructions {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .instructions ol {
+            padding-left: 25px;
+        }
+
+        .instructions li {
+            margin-bottom: 12px;
+        }
+
+        .notice {
+            background: #fff7db;
+            border-left: 5px solid #f4bd23;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        footer {
+            background: #202a3d;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            .section-title h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🧩 MindaHero</h1>
+        <p>
+            Aplikasi pembelajaran interaktif untuk membantu kanak-kanak
+            belajar sambil bermain.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="container">
+            <div class="section-title">
+                <h2>Aplikasi MindaHero</h2>
+                <p>Pilih aplikasi yang ingin dimuat turun.</p>
+            </div>
+
+            <div class="apps-grid">
+
+                <article class="app-card">
+                    <div class="app-icon">🧩</div>
+
+                    <h3>MindaHero Kids</h3>
+
+                    <span class="version">Versi 1.0.0</span>
+
+                    <p>
+                        Permainan pembelajaran interaktif yang direka khas
+                        untuk kanak-kanak.
+                    </p>
+
+                    <a
+                        class="download-button"
+                        href="PAUTAN-APK-DI-SINI"
+                    >
+                        📥 Muat Turun APK
+                    </a>
+                </article>
+
+                <article class="app-card">
+                    <div class="app-icon">🔤</div>
+
+                    <h3>MindaHero ABC</h3>
+
+                    <p>
+                        Belajar huruf besar, huruf kecil, bunyi huruf
+                        dan perkataan.
+                    </p>
+
+                    <span class="coming-soon">
+                        Akan Datang
+                    </span>
+                </article>
+
+                <article class="app-card">
+                    <div class="app-icon">➕</div>
+
+                    <h3>MindaHero Math</h3>
+
+                    <p>
+                        Aktiviti matematik interaktif untuk pembelajaran
+                        asas kanak-kanak.
+                    </p>
+
+                    <span class="coming-soon">
+                        Akan Datang
+                    </span>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="section-title">
+                <h2>Cara Memasang Aplikasi</h2>
+            </div>
+
+            <div class="instructions">
+                <ol>
+                    <li>Tekan butang <strong>Muat Turun APK</strong>.</li>
+                    <li>Tunggu sehingga fail selesai dimuat turun.</li>
+                    <li>Buka fail APK yang telah dimuat turun.</li>
+                    <li>
+                        Benarkan pemasangan daripada sumber ini sekiranya
+                        diminta oleh telefon.
+                    </li>
+                    <li>Tekan <strong>Install</strong>.</li>
+                    <li>Buka aplikasi MindaHero Kids.</li>
+                </ol>
+
+                <div class="notice">
+                    <strong>Perhatian:</strong>
+                    Aplikasi ini sedang diedarkan secara terus dan belum
+                    diterbitkan di Google Play Store.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 MindaHero. Belajar Sambil Bermain.</p>
+    </footer>
+
+</body>
+</html>
